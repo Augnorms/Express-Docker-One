@@ -5,6 +5,7 @@ const getTodoRoute = require("./routers/gettodo");
 const fetTodoByIdRoute = require("./routers/fetchtodobyid");
 const upateTodoRouter = require("./routers/updatetodo");
 const deletTodoRouter = require("./routers/deletetodo");
+const createUserLoginRouter = require("./routers/creatuserlogins");
 
 
 app.use(express.json());
@@ -15,6 +16,7 @@ app.use("/gettodo", getTodoRoute);
 app.use("/fetchtodobyid", fetTodoByIdRoute);
 app.use("/updatetodo", upateTodoRouter);
 app.use("/deletetodo", deletTodoRouter);
+app.use("/createloginuser", createUserLoginRouter);
 
 
 app.listen("3001",()=>{
