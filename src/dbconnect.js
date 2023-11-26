@@ -9,7 +9,7 @@ const db = mysql.createConnection({
 
 db.connect((err)=>{
   if(err){
-    console.log("database not connected" + err.errno);
+    console.log("database not connected " + err.errno);
   }else{
     console.log('Connected to the database as id ' + db.threadId);
   }
