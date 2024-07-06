@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  src:
+    build: .
+    container_name: express_c
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules

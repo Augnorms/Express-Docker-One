@@ -1,17 +1,17 @@
 const mysql = require("mysql2");
 
 const db = mysql.createConnection({
-    user:"root",
-    host:"localhost",
-    password:"Microvelli@027",
-    database:"todoDatabase"
+  user: "root",
+  host: "localhost",
+  password: "Microvelli@027",
+  database: "expressdb",
 });
 
-db.connect((err)=>{
-  if(err){
+db.connect((err) => {
+  if (err) {
     console.log("database not connected " + err.errno);
-  }else{
-    console.log('Connected to the database as id ' + db.threadId);
+  } else {
+    console.log("Connected to the database as id " + db.threadId);
   }
 });
 

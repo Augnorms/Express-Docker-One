@@ -4,8 +4,8 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon -L index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -18,3 +18,4 @@
     "pg": "^8.11.3"
   }
 }
+ 
