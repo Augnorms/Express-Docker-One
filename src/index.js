@@ -13,8 +13,7 @@ app.use(express.json());
 
 //create a todo route
 app.get("/helloworld", (req, res) => {
-  res.send("i have access to your endpoint so beware of fraudsters connect with us");
-  // console.log("i have access to your endpoint so");
+  res.send("i have access to your endpoint so beware of fraudsters connect with us to be safe");
 });
 app.use("/createtodo", createTodoRoute);
 app.use("/gettodo", getTodoRoute);
